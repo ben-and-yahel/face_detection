@@ -5,6 +5,7 @@ we made this github project to share with you the things we learn from it.
 hope you will expand your knowloage about machine learning, AI and image filtering.
 # what is it?
 *![What is bounding box in image processing? - Quora](https://lh3.googleusercontent.com/Ug9cC9AEJxxnLRlwU9sKDQwPYxwkf40H1ksJ6EDt745XZfBd3SWuI88t_BMtMcF-JvM4IwaLquXmhGAG_QRcgoCW7e94P3v3SLhyw2bGwueDY5WebCqWX5gYi3Y5-1oHmO1ggzzL59Q)
+
 Well basicly our code takes an image and detect where the face are in the image and who is it.
  - classifiction \bounding box- we uses svm, random forest and machine learnin for knowing where the face is.
  - clustering - the way messuring something and tell how similar it to another thing.
@@ -16,7 +17,6 @@ Well basicly our code takes an image and detect where the face are in the image 
  - dlib
  - sklearn
  - firebase_admin
- 
 
 ## introduction to AI
 AI is the future, you can see it almost in everything: in your phone, TV, spotify and more...
@@ -37,19 +37,23 @@ the **green** line is bad, the **blue** line is good but not accurate and the **
 Face is a complicate varient and we cannot just pass the pixels input of our image to the machine because it way to big and dosen't much.
 to slove this problam we will use HOG or Histogram of Orriented Grandients.
 basicly it messures the difference between point 9 pixels and set an arrow that point to biggest difference.
+
 ![](https://lh5.googleusercontent.com/FdJjher-NuALheOVJtohgLAq5dT5bMQcyC9kU4UlKzHatOy3lxF5QzYXCkDGGRw-HyHWpGtP0EiPfTFWVzb2ufgTijr1PmzMyJPWUStiTsLFJP97qryeju63c6np2F83KbV6EklCMAk)
 
 ## Data
 svm require a lot of data to work poparly,
 in our project we uses lfw for the faces data and skimage.data libary for the negative data
-lfw - 
-[https://scikit-image.org/docs/0.14.x/api/skimage.data.html#skimage.data.lfw_subset](https://scikit-image.org/docs/0.14.x/api/skimage.data.html#skimage.data.lfw_subset)
-skimage.data - **[https://scikit-image.org/docs/dev/api/skimage.data.html](https://scikit-image.org/docs/dev/api/skimage.data.html)**
+lfw - [https://scikit-image.org/docs/0.14.x/api/skimage.data.html#skimage.data.lfw_subset](https://scikit-image.org/docs/0.14.x/api/skimage.data.html#skimage.data.lfw_subset)
+
+skimage.data - [https://scikit-image.org/docs/dev/api/skimage.data.html](https://scikit-image.org/docs/dev/api/skimage.data.html)
 
 # Stage 1.5  - train
 In this project we used python to power because it has so much support on AI and it very easy to use.
 after seting up the code and training our svm moder we ended up with this:
-**![](https://lh4.googleusercontent.com/K6S7j7wWKfxYtQoQ_1PHWgArS-DnFd-DrfTiynIqEAJKPm6UxftijtAx_i8QMkpubAyFHCSTQVgltLRyCgGZBbYnZa2HYCGClQuGyUG4nOIiXw-U2p-VxDCV1DYJgL7iFjJ2s8a4tfI)**
+
+
+![](https://lh4.googleusercontent.com/K6S7j7wWKfxYtQoQ_1PHWgArS-DnFd-DrfTiynIqEAJKPm6UxftijtAx_i8QMkpubAyFHCSTQVgltLRyCgGZBbYnZa2HYCGClQuGyUG4nOIiXw-U2p-VxDCV1DYJgL7iFjJ2s8a4tfI)
+
 
 yay.
 
@@ -58,6 +62,7 @@ In our first time using Ai model we encountered in the hardes part of Ai which i
 Now the creativity had to be shown and we have to work harder to get what we want, whitch is a fast and accurate machine.
 so after trying to make our machine smarter we doubled the negative data and train it more times
 and we ended up with this:
+
 **image**
 
 yay?
