@@ -42,7 +42,8 @@ basicly it messures the difference between point 9 pixels and set an arrow that 
 
 ## Data
 svm require a lot of data to work poparly,
-in our project we uses lfw for the faces data and skimage.data libary for the negative data
+in our project we uses lfw for the faces data and skimage.data libary for the negative data.
+
 lfw - [https://scikit-image.org/docs/0.14.x/api/skimage.data.html#skimage.data.lfw_subset](https://scikit-image.org/docs/0.14.x/api/skimage.data.html#skimage.data.lfw_subset)
 
 skimage.data - [https://scikit-image.org/docs/dev/api/skimage.data.html](https://scikit-image.org/docs/dev/api/skimage.data.html)
