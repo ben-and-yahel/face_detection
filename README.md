@@ -22,7 +22,7 @@ Well basicly our code takes an image and detect where the face are in the image 
 AI is the future, you can see it almost in everything: in your phone, TV, spotify and more...
 in our project we develop a brain\mind who got a self thinking and can tell us wether an image contian face or not. 
 
-# Stage one - Bounding Box Classifiar
+# Stage 1.0 - Bounding Box Classifiar
 
 we would like to make a brain\mind who can look at image and tell what is it just backgroud and what is it face.
 ## SVM
