@@ -113,12 +113,12 @@ as we can see in the image below SVM classify every image while Tree decides whi
 **![](https://lh6.googleusercontent.com/IIyONkam0tl5C1ekExgdShfSVqHXM4N1knXUbHiNVSJ0oUcm6TCPFXviSCgVSvc13wcHzRqroUL8DyNDfmjOAC__BQnwHTAI3REhwMs7w-d7Blc1ZkTiMFpoIaDamvm6asEILrVf_q7Jp28mZw)**
 
 ## stage 1.5.3 - retrain model
-To make our model more accurate we use in the method of **retrain model**
-Our model was traind on faces date that was 62*47 px, which means only faces in this size will absorb(we will fix that problam in the future) which means that if we run our model on 200*200 image and all the image is face our shouldent find  anything.
-that wasent the case :(
-as you can see in the image below our model classify the eyes and mause as face, we can understand why because eyes and mause are very similar to a face although they don't.
-What wev'e done is taking 10,000 of this "mistakes" and train our model in addition to the data we already have.
-In the image below we can see the output  of **stage 1.5**, weve got one bounding box and its fast and accurate!
+- To make our model more accurate we use in the method of **retrain model**
+- Our model was traind on faces date that was 62 by 47 px, which means only faces in this size will absorb(we will fix that problam in the future) which means that if we run our - model on 200 by 200 image and all the image is face our shouldent find  anything.
+- that wasent the case :(
+- as you can see in the image below our model classify the eyes and mause as face, we can understand why because eyes and mause are very similar to a face although they don't.
+- What wev'e done is taking 10,000 of this "mistakes" and train our model in addition to the data we already have.
+- In the image below we can see the output  of **stage 1.5**, weve got one bounding box and its fast and accurate!
 
 **image**
 
