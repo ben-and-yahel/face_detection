@@ -5,6 +5,8 @@ we made this github project to share with you the things we learn from it.
 hope you will expand your knowloage about machine learning, AI and image filtering.
 # what is it?
 *![What is bounding box in image processing? - Quora](https://lh3.googleusercontent.com/Ug9cC9AEJxxnLRlwU9sKDQwPYxwkf40H1ksJ6EDt745XZfBd3SWuI88t_BMtMcF-JvM4IwaLquXmhGAG_QRcgoCW7e94P3v3SLhyw2bGwueDY5WebCqWX5gYi3Y5-1oHmO1ggzzL59Q)
+
+
 Well basicly our code takes an image and detect where the face are in the image and who is it.
  - classifiction \bounding box- we uses svm, random forest and machine learnin for knowing where the face is.
  - clustering - the way messuring something and tell how similar it to another thing.
@@ -37,18 +39,20 @@ the **green** line is bad, the **blue** line is good but not accurate and the **
 Face is a complicate varient and we cannot just pass the pixels input of our image to the machine because it way to big and dosen't much.
 to slove this problam we will use HOG or Histogram of Orriented Grandients.
 basicly it messures the difference between point 9 pixels and set an arrow that point to biggest difference.
+
 ![](https://lh5.googleusercontent.com/FdJjher-NuALheOVJtohgLAq5dT5bMQcyC9kU4UlKzHatOy3lxF5QzYXCkDGGRw-HyHWpGtP0EiPfTFWVzb2ufgTijr1PmzMyJPWUStiTsLFJP97qryeju63c6np2F83KbV6EklCMAk)
 
 ## Data
 svm require a lot of data to work poparly,
 in our project we uses lfw for the faces data and skimage.data libary for the negative data
-lfw - 
-[https://scikit-image.org/docs/0.14.x/api/skimage.data.html#skimage.data.lfw_subset](https://scikit-image.org/docs/0.14.x/api/skimage.data.html#skimage.data.lfw_subset)
+lfw - [https://scikit-image.org/docs/0.14.x/api/skimage.data.html#skimage.data.lfw_subset](https://scikit-image.org/docs/0.14.x/api/skimage.data.html#skimage.data.lfw_subset)
+
 skimage.data - **[https://scikit-image.org/docs/dev/api/skimage.data.html](https://scikit-image.org/docs/dev/api/skimage.data.html)**
 
 # Stage 1.5  - train
 In this project we used python to power because it has so much support on AI and it very easy to use.
 after seting up the code and training our svm moder we ended up with this:
+
 **![](https://lh4.googleusercontent.com/K6S7j7wWKfxYtQoQ_1PHWgArS-DnFd-DrfTiynIqEAJKPm6UxftijtAx_i8QMkpubAyFHCSTQVgltLRyCgGZBbYnZa2HYCGClQuGyUG4nOIiXw-U2p-VxDCV1DYJgL7iFjJ2s8a4tfI)**
 
 yay.
@@ -85,7 +89,6 @@ ex:
 - in the img we can see a dection tree that decids whether a man is fit or not.
 - afcors that all this questions the model decideds by himself and when it became for pixels in a face it gets more complicate.
 
-
 **![Decision Tree Classification - Towards Data Science](https://lh6.googleusercontent.com/uGT90mGTBNEy_z64sYR1VXEHhwvepYAbIuQaQodVcxVicHr7LFFAgo2SPBPZEOv67UPGov6ibqxdl74KSmsAqRaggYwkD5R-8X8JFIweGffnaDv4bd-AUKu4lzMccmYr9E8AJjfcwjI)**
 
 **Random Tree Forest**
@@ -93,15 +96,20 @@ okay... we get what destion tree means but what "forest" means?
 forest is a model that make use of several tree that have been trained on different parts of the data.
 this model give us more accuracy because there is more outcomes from the trees and we can valid our output from differnet angel.
 in the img below we can see the **blue** tree is regular tree and it has been trained on all the 4 parts of our data. On the other hand the **green** trees are a forest and they have been trained on a differnt data.
+
 **![Understanding Random Forest - Towards Data Science](https://lh3.googleusercontent.com/0FWIRKkEdtC_r5EgmmiFx_YPxiatm2nIKfLKVsv63hqnYX_L_PlRRsp1TvBxQxAVUBRd8GwV0Pcdidtggr2_plVo6U6bfswh9-WvpV1WdnoSDP_hdV4vpfICOeXBAzLebhq-EDJ_u-_jvoGHog)**
+
 In the image below we can a forest that got some dectition based one 6 trees that said 1 while 3 trees said 0.
 which meens our answer in 1.
+
 **![Understanding Random Forest - Towards Data Science](https://lh4.googleusercontent.com/IEBQQS8WE1FmhS8wtY3ao7nl1uIM_DIH26_uvc33Fd-aSv1h9oRSQERAbqrHfUsMQ-dcs8KchycZ_lNVy5yeTVEYX5Zfb70DFXgVeI7ROkLIWqXwNEcjC8ysKXMgD2JmGBFJCiR08fTplK26yQ)**
+
 **coclution**
 So why tree forest is doing such a good job for us? 
 The reason for that is because it filters automaticly all the inputs. It means that until now the SVM model was checking every part in the image to undersatnd if its face or not, but tree works in a differnt way.
 desition tree checks spesific parameters and only then coutinus to another check which means if we have part in image which is compelecy white or black the tree will imidiatly decides that its not face while SVM will think a lot more time.
 as we can see in the image below SVM classify every image while Tree decides which dump imidiatly.
+
 **![](https://lh6.googleusercontent.com/IIyONkam0tl5C1ekExgdShfSVqHXM4N1knXUbHiNVSJ0oUcm6TCPFXviSCgVSvc13wcHzRqroUL8DyNDfmjOAC__BQnwHTAI3REhwMs7w-d7Blc1ZkTiMFpoIaDamvm6asEILrVf_q7Jp28mZw)**
 
 ## stage 1.5.3 - retrain model
