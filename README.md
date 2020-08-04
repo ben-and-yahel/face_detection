@@ -1,3 +1,4 @@
+
 # Welcome to our face detection project!
 
 Hi! this was our biggest project yet and it include lodes of knowlage and hard work.
@@ -129,4 +130,20 @@ yay!!!
 
 **![people detection with haar cascade - Stack Overflow](https://lh3.googleusercontent.com/OQvhQnXnTFipcFtUnCunAsOt_xybR3S_dSeotkB3p8w6Dmg-GOm7FfDY1a105-ZOwEU5bYEyFbP65BEfzKRCTLXggYJog5gOKt2XTCEqojei_XYUp8IhmAjdz3cu6F-YMVUY8KkEQh-LMJMDbQ)**
 ### wait what?!
-I thout that we got everythink fixed, what happend?
+- I thout that we got everythink fixed, what happend?
+- The reason for that is the image we tested on was to easy and our machine got the face right but in a more complicate image the machine also detect object that not face.
+- The random forest was very fast but still he dosen't has the percition of the SVM, we diden't know what we should do from here, we have 2 models:
+1. first is very fast but dosent accurate
+2. second is slow and accurate
+- From this state we were needed to think outside the box and think beyond **parameter tuning**
+- After a lot of testing on image we realize that the tree model is reconize a lot of none-face objects as faces **but** it does reconize faces in addition to that.
+- So what wev'e done is to take the tree model and let him filter the image and then run the SVM model on the images that were marked as face.
+- It crated a very fast check(0.7 sec) and very Precise check.
+
+# stage 2.0 - clustering
+- Ok so more intersting stage then only "upgrading our model" is the reconize of other faces!
+- to know which face is differnt from each other we 2 steps:
+1. Extract feachers from the face, which means to know what makes our face unique.
+2. To know which feachers are similar to other feachers.
+## stage 2.1 - Face encodings
+- There is a lot of methods of extracting feachers from a face and we choose the 128 messuraments method.
