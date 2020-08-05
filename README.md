@@ -20,7 +20,13 @@ Well, basically our code takes an image and detects where the face area in the i
  - sklearn
  - firebase_admin
  
-
+ ## Menu
+ <a href="https://github.com/ben-and-yahel/face_detection/blob/master/README.md#stage-10---bounding-box-classifier" target="_blank">Stage 1.0</a>
+  <a href="https://github.com/ben-and-yahel/face_detection/blob/master/README.md#stage-15----train" target="_blank">Stage 1.5 - train</a>
+<a href="https://github.com/ben-and-yahel/face_detection/blob/master/README.md#stage-20---clustering" target="_blank">stage 2.0 - clustering</a>
+<a href="https://github.com/ben-and-yahel/face_detection/blob/master/README.md#stage-25---find-the-simalrity" target="_blank">stage 2.5 - find the simalrity</a>
+ <a href="https://github.com/ben-and-yahel/face_detection/blob/master/README.md#stage-30---gui-graphic-user-interface" target="_blank">stage 3.0 - GUI</a>
+  <a href="https://github.com/ben-and-yahel/face_detection/blob/master/README.md#bottom-line" target="_blank">bottom line</a>
 ## Introduction to AI
 AI is the future, you can see it almost in everything: on your phone, TV, Spotify and more...
 in our project we develop a brain\mind who got a self-thinking and can tell us whether an image contains a face or not. 
@@ -145,7 +151,7 @@ yay!!!
 - to know which face is different from each other we 2 steps:
 1. Extract features from the face, which means to know what makes our face unique.
 2. To know which features are similar to other features.
-## stage 2.1 - Face encodings
+## stage 2.2 - Face encodings
 - There is a lot of methods of extracting features from a face and we choose the 128 measurement method.
 - While us humans looks for simularity in faces by eye size, nose position... this method is using a complecte other way.
 - We will train a computer to find himself the most 128 acurate measurement that unique the face, this model were trained on over 3 milion faces and took 48 hours to understand which is the best way to messure face.
@@ -154,7 +160,7 @@ yay!!!
 ![A Beginners guide to Building your own Face Recognition System to ...](https://lh6.googleusercontent.com/l9uCm4Ir3cLc_jA2FCJ6N9WJTrEqGsSqEE1lAJQv0ar72aXXkhciVxubq4zSrnoYujcllakvm2htBVQp4GG9pxdnESI6OYi9tGiq1NUFdSB90vBLxmRH9K9C6l-lkt_K2zoZoLoT-LPiaI1V3g)
 
 
-## stage 2.5 - find the simalrity
+# stage 2.5 - find the simalrity
 - Ok so we extract the feachers from the face but now how can we know which is similar and which differnt.
 - For that we will use clustering, by the DBSCAN method because it relative simple and fit for as.
 - DBSCAN takes data and senter it into groups by thier simularity.
@@ -164,7 +170,6 @@ yay!!!
 - Ok were so close to the end but we only one last thing for the model be perfect.
 - Our model were trained on 62*47 matrix and he can only reconize face in this size.
 - what weve done to solve this is to give our model the image in differnt sizes and search for different size faces in the image. 
-
 # stage 3.0 - GUI (Graphic User Interface)
 Well the last and most fun part is the building of our GUI.
 We build an interface that can comunicate using socket with python and comuunicate with firebase so we can build our users so they will be cloud base.
