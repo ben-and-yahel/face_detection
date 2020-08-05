@@ -1,4 +1,5 @@
 
+
 # Welcome to our face detection project!
 
 Hi! this was our biggest project yet and it includes lodes of knowledge and hard work.
@@ -75,7 +76,7 @@ In our first time using Ai model we encountered in the hardest part of Ai which 
 Now the creativity had to be shown and we have to work harder to get what we want, which is a fast and accurate machine.
 so after trying to make our machine smarter we doubled the negative data and train it more times
 and we ended up with this:
-**image**
+![](https://lh4.googleusercontent.com/wqb2YyrF5bH7fl5aPHmwFjmOMCP5Vg67UAZStXGnyHz1vf8hdG6OFTH9KinBhc-mnZ31H763tNJngUtevDiSVcrP7qfqWG5je0PSbg0xTezLYQFDi_F1K_ekfMdMt6I20eWFErS-IRY)
 
 yay?
 # Concloutin and a new way
@@ -83,9 +84,12 @@ our vision for the end of this task is the same as the previous one "upgrading t
 1. our model runs very slow, we would like to get to state when the client would get an immediate response from the server.
 2. The model is still not accurate as we want we have to upgrade it but not enough.
 3. the bounding boxes we get represent a lot of information and we need to reduce it to one bounding box.
+
 ## stage 1.5.1 - NMS(Non-Maximum-Suppression)
 A quick way to take a lot of data and reduced it by averaging all the variables we need.
+
 ## stage 1.5.2 - Random Tree Forest
+
 ### choices trees:
 To get a better understanding of what is a Random Tree Forest we first need to understand what is a **Decision Tree Classifier**
 choices trees are pretty old fashion way but it worked very well for us in this project.
@@ -133,7 +137,7 @@ as we can see in the image below SVM classifies every image while Tree decides w
 - What we've done is taking 10,000 of these "mistakes" and train our model in addition to the data we already have.
 - In the image below we can see the output of **stage 1.5**, we've got one bounding box and it is fast and accurate!
 
-**image**
+**![](https://lh5.googleusercontent.com/98INeHW3eQLKa0yWK4mJ3CbboRgyZBCWz_RkbkbjsmfaUmltt2B9wgjuTlsyzhexMvXfzjwGPrI-Hlpk619jpggXduUmj7UIo4PjWlVzerSmYTP8D93h1FoURGL1ZUdCmWYI1n1K_zU)**
 
 yay!!!
 
