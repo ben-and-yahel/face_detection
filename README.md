@@ -8,7 +8,7 @@ hope you will expand your knowledge about machine learning, AI and image filteri
 *![What is bounding box in image processing? - Quora](https://lh3.googleusercontent.com/Ug9cC9AEJxxnLRlwU9sKDQwPYxwkf40H1ksJ6EDt745XZfBd3SWuI88t_BMtMcF-JvM4IwaLquXmhGAG_QRcgoCW7e94P3v3SLhyw2bGwueDY5WebCqWX5gYi3Y5-1oHmO1ggzzL59Q)
 
 
-Well, basically our code takes an image and detects where the face area in the image and who is it.
+Well, our code takes an image and detects where the face area in the image and who is it.
  - classification \bounding box- we use SVM, random forest and machine learning for knowing where the face is.
  - clustering - the way measuring something and tell how similar it to another thing.
 ## Prerequisites
@@ -159,29 +159,29 @@ yay!!!
 2. To know which features are similar to other features.
 ## stage 2.2 - Face encodings
 - There is a lot of methods of extracting features from a face and we choose the 128 measurement method.
-- While us humans looks for simularity in faces by eye size, nose position... this method is using a complecte other way.
-- We will train a computer to find himself the most 128 acurate measurement that unique the face, this model were trained on over 3 milion faces and took 48 hours to understand which is the best way to messure face.
+- While we humans look for similarity in faces by eye size, nose position... this method is using a completely different way.
+- We will train a computer to find himself the most 128 accurate measurements that unique the face, this model was trained on over 3 million faces and took 48 hours to understand which is the best way to measure face.
 - This method is called **deep learning** when we do not understand how the computer got his result.
-- As you can see in the image below we have woman that her face is traslated to 128 different measurement.
-![A Beginners guide to Building your own Face Recognition System to ...](https://lh6.googleusercontent.com/l9uCm4Ir3cLc_jA2FCJ6N9WJTrEqGsSqEE1lAJQv0ar72aXXkhciVxubq4zSrnoYujcllakvm2htBVQp4GG9pxdnESI6OYi9tGiq1NUFdSB90vBLxmRH9K9C6l-lkt_K2zoZoLoT-LPiaI1V3g)
+- As you can see in the image below we have a woman that her face is translated to 128 different measurements.
+![A Beginners Guide to Building your own Face Recognition System to ...](https://lh6.googleusercontent.com/l9uCm4Ir3cLc_jA2FCJ6N9WJTrEqGsSqEE1lAJQv0ar72aXXkhciVxubq4zSrnoYujcllakvm2htBVQp4GG9pxdnESI6OYi9tGiq1NUFdSB90vBLxmRH9K9C6l-lkt_K2zoZoLoT-LPiaI1V3g)
 
 
-# stage 2.5 - find the simalrity
-- Ok so we extract the feachers from the face but now how can we know which is similar and which differnt.
-- For that we will use clustering, by the DBSCAN method because it relative simple and fit for as.
-- DBSCAN takes data and senter it into groups by thier simularity.
+# stage 2.5 - find the similarity
+- Ok so we extract the features from the face but now how can we know which is similar and which different.
+- For that we will use clustering, by the DBSCAN method because it is relatively simple and fit for as.
+- DBSCAN takes data and centers it into groups by their similarity.
 - as you can see in the image below we got 3 groups  and the algorithm can split them.![https://lh5.googleusercontent.com/cCHPy36O9qJTtxHeJ-hjciG1pfSCziA_EL-XSDUsxH-Q88Ah6UVLr6sjJsjB64yxBijLwviQl5x5yVkIHP8x54M74voHNwXWiT7pBljpDSz5af5ynu0DzNu6mPOWbjqiBwHm7lss](https://lh3.googleusercontent.com/xLHoHEu55iqDEdFweGGeBIEYBRwZSg_hEOuZDSmMGGigtCMCl_lWIPvM_hiPS5hrk4IiT-o3mFvN7HYBpV4FmR8phmZAiyUpHQYoYyviUjzc6-i4XxwJ-OeedYQEScznKdTJgwuDh-hLjdep3g)
 
 ## stage 2.7 - dynamic window
 - Ok were so close to the end but we only one last thing for the model be perfect.
-- Our model were trained on 62*47 matrix and he can only reconize face in this size.
-- what weve done to solve this is to give our model the image in differnt sizes and search for different size faces in the image. 
+- Our model was trained on 62*47 matrix and he can only recognize a face in this size.
+- what we've done to solve this is to give our model the image in different sizes and search for different size faces in the image. 
 # stage 3.0 - GUI (Graphic User Interface)
 Well the last and most fun part is the building of our GUI.
-We build an interface that can comunicate using socket with python and comuunicate with firebase so we can build our users so they will be cloud base.
+We build an interface that can communicate using a socket with python and communicate with firebase so we can build our users so they will be cloud base.
 
 # bottom line
-In this project we faced a ton of bags, problems and obstagels and still had fun from every moment and learn a lot on every thing we wanted and even we didn't get the best model or product we are very proud on what we have done and learn.
-This prject made us learn a lot about our self and what can we preduce if we very want something.
+In this project we faced a ton of bags, problems and obstacles and still had fun from every moment and learn a lot about everything we wanted and even we didn't get the best model or product we are very proud of what we have done and learn.
+This project made us learn a lot about our self and what can we produce if we very want something.
 
-### hope you enjoind :)
+### hope you enjoyed :)
