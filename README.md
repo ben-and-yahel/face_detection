@@ -24,10 +24,15 @@ Well, basically our code takes an image and detects where the face area in the i
  <a href="https://github.com/ben-and-yahel/face_detection/blob/master/README.md#stage-10---bounding-box-classifier" target="_blank">Stage 1.0</a>
  
   <a href="https://github.com/ben-and-yahel/face_detection/blob/master/README.md#stage-15----train" target="_blank">Stage 1.5 - train</a>
+  
 <a href="https://github.com/ben-and-yahel/face_detection/blob/master/README.md#stage-20---clustering" target="_blank">stage 2.0 - clustering</a>
+
 <a href="https://github.com/ben-and-yahel/face_detection/blob/master/README.md#stage-25---find-the-simalrity" target="_blank">stage 2.5 - find the simalrity</a>
+
  <a href="https://github.com/ben-and-yahel/face_detection/blob/master/README.md#stage-30---gui-graphic-user-interface" target="_blank">stage 3.0 - GUI</a>
+ 
   <a href="https://github.com/ben-and-yahel/face_detection/blob/master/README.md#bottom-line" target="_blank">bottom line</a>
+  
 ## Introduction to AI
 AI is the future, you can see it almost in everything: on your phone, TV, Spotify and more...
 in our project we develop a brain\mind who got a self-thinking and can tell us whether an image contains a face or not. 
