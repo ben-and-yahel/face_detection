@@ -40,17 +40,17 @@ in our project we develop a brain\mind who got a self-thinking and can tell us w
 
 # Stage 1.0 - Bounding Box Classifier
 
-we would like to make a brain\mind who can look at an image and tell what is it just background and what is it face.
+we would like to make a brain\mind who can look at an image and tell what is just a background and what is a face.
 ## SVM
 SVM - Support Vector Machine 
 its a method that using supervised learning.
 It means that in this method we will be using learning in positive\negative attitude.
-we will give our machine 2 arrays,** one** is positive and contains faces we would like to allocate and the **second** contains negative images of grass, wall, Sky exd...
+we will give our machine 2 arrays, **one** is positive and contains faces we would like to allocate and the **second** contains negative images of grass, wall, Sky exd...
 as we can see in pic1 we got 3 lines that the machine set about the data:
 the **green** line is bad, the **blue** line is good but not accurate and the **red** line is the best line.
 
 ## Image filtering
-Our face is a complicated variant and we cannot just pass the input of the pixel of our image to the machine because it is way too big and doesn't much.
+Our face is a complicated variant and we cannot just pass the input of the pixel of our image to the machine because it is way too big and doesn't match.
 to solve this problem we will use HOG or Histogram of Oriented Gradients.
 basically, it measures the difference between point 9 pixels and sets an arrow that points to the biggest difference.
 
