@@ -161,7 +161,7 @@ yay!!!
 - as you can see in the image below we got 3 groups  and the algorithm can split them.![https://lh5.googleusercontent.com/cCHPy36O9qJTtxHeJ-hjciG1pfSCziA_EL-XSDUsxH-Q88Ah6UVLr6sjJsjB64yxBijLwviQl5x5yVkIHP8x54M74voHNwXWiT7pBljpDSz5af5ynu0DzNu6mPOWbjqiBwHm7lss](https://lh3.googleusercontent.com/xLHoHEu55iqDEdFweGGeBIEYBRwZSg_hEOuZDSmMGGigtCMCl_lWIPvM_hiPS5hrk4IiT-o3mFvN7HYBpV4FmR8phmZAiyUpHQYoYyviUjzc6-i4XxwJ-OeedYQEScznKdTJgwuDh-hLjdep3g)
 
 ## stage 2.7 - dynamic window
-- Ok were so close to the end but we only one last thing for the model be perfect.[enter link description here](https://github.com/ben-and-yahel/face_detection/blob/master/README.md#bottom%20line)
+- Ok were so close to the end but we only one last thing for the model be perfect.
 - Our model were trained on 62*47 matrix and he can only reconize face in this size.
 - what weve done to solve this is to give our model the image in differnt sizes and search for different size faces in the image. 
 
